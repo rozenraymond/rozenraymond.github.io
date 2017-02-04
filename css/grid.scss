@@ -238,11 +238,29 @@ html {
   }
 
   /* paragraph text */
+  .skills {
+    height: 200vh;
+  }
+
+  .front-end-list, .back-end-list, .others-list {
+    
+  }
+
+  .skills-list {
+    margin-top: 15px;
+    }
+
   .sm-p {
     line-height: 150%;
     font-size: 0.8rem;
   }
-  
+
+  .sm-card {
+    font-size: 0.8rem;
+  }
+
+
+
   .sm-col-12{
     width:100%;
   }

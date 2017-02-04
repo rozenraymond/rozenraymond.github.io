@@ -93,7 +93,7 @@ span.keyword {
 /* Skills */
 .skills {
   margin-top: 20px;
-  height: 15%;
+
   background-color: #04395E;
   font-family: 'Karla', sans-serif;
 
@@ -106,16 +106,12 @@ span.keyword {
   padding-bottom: 30px;
 }
 
-.skills-list-container {
-  
-}
-
 .skills-list {
   float: left;
   display: inline-block;
   padding: 0px 20px;
   height: 70%;
-  border: 1px solid white;
+
 
 }
 
@@ -136,14 +132,27 @@ span.keyword {
   color: #FAF3DD;
   text-align: center;
   background-color: rgba(255,255,255,0.5);
-  // height: 45vh;
+  height: 45vh;
 }
 
 .list {
   list-style-type: none;
 }
 
-.cv {
-  height: 30px;
-  background: #FEE;
+.cv-text {
+  margin: 0 auto;
+
+}
+
+.cv-text p {
+  margin-top: 30px;
+  padding: 5px 5px;
+  text-align: center;
+  border: 1px solid #FAF3DD;
+  color: #FAF3DD;
+}
+
+.cv-text-p:hover {
+  color: #04395E;
+  background-color: #FAF3DD;
 }
