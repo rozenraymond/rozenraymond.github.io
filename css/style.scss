@@ -1,0 +1,120 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/*Nav Bar*/
+nav {
+  display: block;
+  margin-top: 10px;
+}
+
+.navbar {
+  // height: 250px;
+  float:left;
+  display: inline-block;
+  text-align: center;
+}
+
+a.home, a.about, a.projects, a.contacts{
+  text-decoration: none;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.mobileNavBar {
+  float: left;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+header {
+  overflow: auto;
+  display: block;
+}
+
+
+/* Intro Content */
+.intro-content {
+  margin-top: 15px;
+  height: 680px;
+  background-color:#423E67;
+}
+
+.intro-text {
+  margin: 10% 5% 10% 5%;
+  color: #FAF3DD;
+  font-family: 'Karla', sans-serif;
+}
+
+span.keyword {
+  color: #F37061;
+}
+
+/* About Me */
+.aboutme {
+  margin-top: 20px;
+  height: 20%;
+  background-color: salmon;
+}
+
+.aboutme-title {
+  margin-left: 5%;
+  display: inline-block;
+  font-family: 'Karla', sans-serif;
+}
+
+.aboutme-title h2 {
+  display: inline-block;
+}
+
+.aboutme-content {
+  margin: 10% 5%;
+  display: inline-block;
+  text-align: justify;
+  line-height: 200%;
+  font-family: 'Karla', sans-serif;
+}
+
+.aboutme-more {
+  margin-top: 5%;
+}
+
+/* Skills */
+.skills {
+  margin-top: 20px;
+  height: 15%;
+  background-color: #04395E;
+  font-family: 'Karla', sans-serif;
+}
+
+.skills-title{
+  color: #FAF3DD;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.skills-list {
+  float: left;
+  display: inline-block;
+
+}
+
+.front-end, .back-end, .others{
+  margin: 5px;
+  color: #FAF3DD;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  height: 20%;
+}

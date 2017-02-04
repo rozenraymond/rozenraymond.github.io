@@ -4,43 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Karla" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/grid.scss">
+  <link rel="stylesheet" href="css/style.scss">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/skrollr.js"></script>
+  <script src="js/type.js"></script>
+  <script src="js/main.js"></script>
 
   <title>Rozen's Portfolio</title>
 </head>
 <body>
-      <div class="first">
-        <div class="intro-box .lg-col-6">
-          <div class="inner-intro-box">
-            <div class="intro-text">
-              <h1>Hi there, </h1>
-              <p>I am a <span class="text"></span></p>
-            </div>
-          </div>
+  <div class="container">
+    <header>
+      <nav class="col lg-col-12 md-col-12 sm-hide">
+        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#" class="home">HOME</a></div>
+        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#" class="about">ABOUT</a></div>
+        <div class="lg-col-3 md-col-3 navbar lg md "><a href="#" class="projects">PROJECTS</a></div>
+        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#" class="contacts">CONTACT</a></div>
+      </nav>
+
+      <div class=" col lg-hide md-hide sm-lg-3">
+        <div class="mobileNavBar"> R</div>
+      </div>
+    </header>
+
+    <div class="intro-content col lg-col-12 md-col-12 sm-col-12">
+      <div class="intro-text">
+        <p class="lg-intro md-intro sm-intro">Oh, hi there!</p>
+        <br>
+        <p class="lg-intro md-intro sm-intro">I'm Rozen.</p>
+        <p class="lg-intro md-intro sm-intro">A <span class="keyword">web developer</span> based in Sydney. I have done several <span class="keyword">projects</span> and would love to showcase it to you. Don't hesitate to <span class="keyword">say hello</span>! </p>
+      </div>
+    </div>
+
+    <div class="aboutme aboutme-small col lg-col-12 md-col-12 sm-col-12">
+      <div class="aboutme-title lg-col-2">
+        <h2>about me</h2>
+      </div>
+
+      <div class="aboutme-content lg-col-8">
+        <p class="lg-p md-p sm-p">
+          I'm Rozen, who are currently on the adventure on being a full stack web developer. I love building creative stuff and also connecting the dots behind the scenes. I have a background in petroleum geosciences (i know it's a totally different field and also it's ok if you don't know what is petroleum geosciences). In addition to that, I have experience working in a startup agency which specialized in ad networks and mobile advertising.
+        </p>
+
+        <div class="aboutme-more lg-p md-p sm-p"><a href="#">More on how I discover my passion in coding.</a></div>
+      </div>
+    </div>
+
+
+    <div class="skills col lg-col-12 md-col-12 sm-col-12">
+      <div class="skills-title lg-col-12 md-col-12 sm-col-12">
+        <h2>s k i l l s</h2>
+      </div>
+
+      <div class="skills-list lg-col-4 md-col-4 sm-col-12">
+        <div class="front-end">
+          front-end
         </div>
       </div>
 
-      <div class="second">
-        <div class="about-me">
-          <h1>About Me</h1>
-          <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quibusdam deleniti quidem ipsa doloribus ex officia ullam ut minus magnam sunt, quo iusto, quis, perferendis dolorem corporis distinctio sequi at.</span>
-          <span>Consectetur, eius, libero! Illo veniam, impedit voluptate! Amet, molestiae accusamus! Officiis aliquid veniam eaque provident qui accusantium natus odio aut repellendus sunt perferendis ea laborum corporis culpa sit, reprehenderit, laudantium.</span>
-          <span>Temporibus fugit vel voluptate! Placeat beatae nostrum aperiam suscipit quis blanditiis illo nulla ad atque iusto. Impedit quis sequi, fugiat, sunt quas magnam beatae, illo repellendus labore animi quisquam corporis.</span>
-          <span>Accusamus repellendus totam illum ducimus quasi repudiandae culpa fuga magni, aspernatur, necessitatibus atque sunt deleniti? Cumque inventore ex ratione fuga aut, excepturi soluta, ipsum architecto, dolorem explicabo similique dicta? Impedit.</span>
-          <span>Veniam quo reiciendis at mollitia sunt eveniet dignissimos aut, neque eos fuga aspernatur quas architecto illum magni minus numquam voluptas adipisci qui molestias nam debitis aliquam quaerat sapiente voluptates. Eos.</span></p>
+      <div class="skills-list lg-col-4 md-col-4 sm-col-12">
+        <div class="back-end">
+          back-end
         </div>
       </div>
 
-      <div class="third">
-
+      <div class="skills-list lg-col-4 md-col-4 sm-col-12">
+        <div class="others">
+          others
+        </div>
       </div>
+    </div>
 
-      <script src="js/jquery.js"></script>
-      <!-- <script src="js/skrollr.js"></script> -->
-      <script src="js/type.js"></script>
-      <script src="js/main.js"></script>
-
-
+  </div>
 </body>
 </html>
