@@ -96,6 +96,7 @@ span.keyword {
   height: 15%;
   background-color: #04395E;
   font-family: 'Karla', sans-serif;
+
 }
 
 .skills-title{
@@ -105,16 +106,44 @@ span.keyword {
   padding-bottom: 30px;
 }
 
+.skills-list-container {
+  
+}
+
 .skills-list {
   float: left;
   display: inline-block;
+  padding: 0px 20px;
+  height: 70%;
+  border: 1px solid white;
 
 }
 
 .front-end, .back-end, .others{
-  margin: 5px;
+
+  margin-top: 5px;
   color: #FAF3DD;
   text-align: center;
   background-color: rgba(255,255,255,0.5);
-  height: 20%;
+  height: 10%;
+  list-style-type: none;
+
+}
+
+.front-end-list, .back-end-list, .others-list {
+  margin-top: 10px;
+  padding-top: 5px;
+  color: #FAF3DD;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  // height: 45vh;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.cv {
+  height: 30px;
+  background: #FEE;
 }
