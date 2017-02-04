@@ -7,7 +7,6 @@ html {
   margin: 0 auto;
   width: 90%;
   height: 4000px;
-  // border: 1px solid black;
   overflow: auto
 }
 
@@ -243,7 +242,7 @@ html {
   }
 
   .front-end-list, .back-end-list, .others-list {
-    
+
   }
 
   .skills-list {

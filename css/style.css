@@ -20,7 +20,6 @@ nav {
 }
 
 .navbar {
-  // height: 250px;
   float:left;
   display: inline-block;
   text-align: center;
@@ -159,5 +158,5 @@ span.keyword {
 /*Projects Sections*/
 .projects {
   background-color: #37123C;
-  
+
 }
