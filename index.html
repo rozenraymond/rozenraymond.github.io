@@ -7,8 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Karla" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/grid.css">
 
   <script src="js/jquery.js"></script>
   <script src="js/main.js"></script>
@@ -19,10 +19,10 @@
   <div class="container">
     <header>
       <nav class="col lg-col-12 md-col-12 sm-hide">
-        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#" class="home">HOME</a></div>
-        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#" class="about">ABOUT</a></div>
-        <div class="lg-col-3 md-col-3 navbar lg md "><a href="#" class="projects">PROJECTS</a></div>
-        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#" class="contacts">CONTACT</a></div>
+        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#home" class="home">HOME</a></div>
+        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#about" class="about">ABOUT</a></div>
+        <div class="lg-col-3 md-col-3 navbar lg md "><a href="#all-projects" class="projects">PROJECTS</a></div>
+        <div class="lg-col-3 md-col-3 navbar lg md"><a href="#all-contacts" class="contacts">CONTACT</a></div>
       </nav>
 
       <div class=" col lg-hide md-hide sm-lg-3">
@@ -30,7 +30,7 @@
       </div>
     </header>
 
-    <div class="intro-content col lg-col-12 md-col-12 sm-col-12">
+    <div id="#home" class="intro-content col lg-col-12 md-col-12 sm-col-12">
       <div class="intro-text">
         <p class="lg-intro md-intro sm-intro">Oh, hi there!</p>
         <br>
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <div class="aboutme aboutme-small col lg-col-12 md-col-12 sm-col-12">
+    <div id="about" class="aboutme aboutme-small col lg-col-12 md-col-12 sm-col-12">
       <div class="aboutme-title lg-col-2 md-col-2 sm-col-6">
         <h2>about me</h2>
       </div>
@@ -49,12 +49,13 @@
           I'm Rozen, who are currently on the adventure on being a full stack web developer. I love building creative stuff and also connecting the dots behind the scenes. I have a background in petroleum geosciences (i know it's a totally different field and also it's ok if you don't know what is petroleum geosciences). In addition to that, I have experience working in a startup agency which specialized in ad networks and mobile advertising.
         </p>
 
-        <div class="aboutme-more lg-p md-p sm-p"><a href="#">More on how I discover my passion in coding.</a></div>
+        <!-- <div class="aboutme-more lg-p md-p sm-p"><a href="#">More on how I discover my passion in coding.</a></div> -->
       </div>
     </div>
 
+    <!-- Skills Section -->
 
-    <div class="skills col lg-col-12 md-col-12 sm-col-12">
+    <div id="skills" class="skills col lg-col-12 md-col-12 sm-col-12">
       <div class="skills-title lg-col-12 md-col-12 sm-col-12">
         <h2>s k i l l s</h2>
       </div>
@@ -120,8 +121,12 @@
 
         <!-- CV -->
         <div class="cv col lg-col-12 md-col-12 sm-col-12">
-          <div class="cv-text lg-col-4 md-col-4 sm-col-8">
-            <p class="cv-text-p">view my full resume</p>
+          <div class="cv-text lg-col-3 md-col-4 sm-col-8">
+            <div class="cv-text-p">
+              <a href="https://drive.google.com/file/d/0B4KifUmlvot3SFBRc0lURWNKbWM/view?usp=sharing" target="blank">
+                view my full resume
+              </a>
+            </div>
           </div>
         </div>
 
@@ -130,7 +135,7 @@
     </div>
 
   <!-- Project Section -->
-    <div class="projects-container col lg-col-12 md-col-12 sm-col-12">
+    <div id="all-projects" class="projects-container col lg-col-12 md-col-12 sm-col-12">
       <div class="projects-title lg-col-12">
         <h2>p r o j e c t s</h2>
       </div>
@@ -152,7 +157,7 @@
           </div>
 
           <div class="projects-screenshots col lg-col-6 md-col-6 sm-col-12">
-            <div class="projects-image lg-col-10 md-col-12 sm-col-12">
+            <div class="projects-image lg-col-10 md-col-10 sm-col-10">
               <img src="images/projectone.png" alt="">
             </div>
           </div>
@@ -174,7 +179,7 @@
           </div>
 
           <div class="projects-screenshots col lg-col-6 md-col-6 sm-col-12">
-            <div class="projects-image lg-col-10 md-col-12 sm-col-12">
+            <div class="projects-image lg-col-10 md-col-10 sm-col-10">
               <img src="images/projecttwo.png" alt="">
             </div>
           </div>
@@ -197,7 +202,7 @@
           </div>
 
           <div class="projects-screenshots col lg-col-6 md-col-6 sm-col-12">
-            <div class="projects-image lg-col-10 md-col-12 sm-col-12">
+            <div class="projects-image lg-col-10 md-col-10 sm-col-10">
               <img src="images/projectthree.png" alt="">
             </div>
           </div>
@@ -219,7 +224,7 @@
           </div>
 
           <div class="projects-screenshots col lg-col-6 md-col-6 sm-col-12">
-            <div class="projects-image lg-col-10 md-col-12 sm-col-12">
+            <div class="projects-image lg-col-10 md-col-10 sm-col-10">
               <img src="images/projectfour.png" alt="">
             </div>
           </div>
@@ -229,7 +234,7 @@
     </div>
 
     <!-- Contact Section  -->
-    <div class="contact-container col lg-col-12 md-col-12 sm-col-12">
+    <div id="all-contacts" class="contact-container col lg-col-12 md-col-12 sm-col-12">
       <div class="contact-innerWrap">
         <div class="contact-title col lg-col-4 md-col-2 sm-col-12">
           <h2>let's get in touch!</h2>
@@ -238,19 +243,28 @@
         <div class="contact-content col lg-col-8 md-col-10 sm-col-12">
           <div class="contact-content-wrap col lg-col-10">
             <div class="email">
-              <img src="images/email.png" alt="">
+              <a href="mailto:rozenr.raymond@gmail.com?Subject=Hi%20Rozen">
+                <img src="images/email.png" alt="">
+              </a>
+
             </div>
 
             <div class="linkedin">
-              <img src="images/linkedin.png" alt="">
+              <a href="https://au.linkedin.com/in/rozen-raymond" target="blank">
+                <img src="images/linkedin.png" alt="">
+              </a>
             </div>
 
             <div class="github">
-              <img src="images/github.png" alt="">
+              <a href="https://github.com/rozenraymond" target="blank">
+                <img src="images/github.png" alt="">
+              </a>
             </div>
 
             <div class="twitter">
-              <img src="images/twitter.png" alt="">
+              <a href="https://twitter.com/zenrevilene" target="blank">
+                <img src="images/twitter.png" alt="">
+              </a>
             </div>
 
           </div>
@@ -258,6 +272,16 @@
 
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container col lg-col-12 md-col-12 sm-col-12">
+      <div class="footer-content col lg-col-12 md-col-12 sm-col-12">
+        <p>copyright 2017 © Rozen</p>
+      </div>
+    </div>
+  </footer>
+
 </div>
 
 

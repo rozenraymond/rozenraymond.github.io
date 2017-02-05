@@ -6,7 +6,7 @@ html {
 .container {
   margin: 0 auto;
   width: 90%;
-  height: 4800px;
+  height: 4900px;
   overflow: auto;
 }
 
@@ -258,7 +258,6 @@ html {
   }
 
   .front-end-list, .back-end-list, .others-list {
-
   }
 
   .skills-list {
@@ -269,6 +268,11 @@ html {
     line-height: 150%;
     font-size: 0.8rem;
   }
+
+  /*.projects-image img {
+    height: 200px;
+    width: 300px;
+  }*/
 
   .sm-card {
     font-size: 0.8rem;
