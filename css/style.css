@@ -197,9 +197,13 @@ span.keyword {
 }
 
 .projects-image{
-  position: absolute;
-  margin-top: 40px;
+  margin-top: 0px;
   margin-left: 40px;
+}
+
+.projects-image img {
+  height: 400px;
+  width: 500px;
 }
 
 /*Contact Section */
