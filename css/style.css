@@ -46,7 +46,7 @@ header {
 /* Intro Content */
 .intro-content {
   margin-top: 15px;
-  height: 680px;
+  height: 650px;
   background-color:#423E67;
 }
 
@@ -62,8 +62,8 @@ span.keyword {
 
 /* About Me */
 .aboutme {
-  margin-top: 20px;
-  height: 20%;
+  margin-top: 60px;
+  height: 500px;
   background-color: salmon;
 }
 
@@ -78,7 +78,7 @@ span.keyword {
 }
 
 .aboutme-content {
-  margin: 10% 5%;
+  margin: 3% 5%;
   display: inline-block;
   text-align: justify;
   line-height: 200%;
@@ -86,12 +86,12 @@ span.keyword {
 }
 
 .aboutme-more {
-  margin-top: 5%;
+  margin-top: 0%;
 }
 
 /* Skills */
 .skills {
-  margin-top: 20px;
+  margin-top: 60px;
   background-color: #04395E;
   font-family: 'Karla', sans-serif;
 }
@@ -156,7 +156,124 @@ span.keyword {
 
 
 /*Projects Sections*/
-.projects {
-  background-color: #37123C;
+.projects-container {
+  margin-top: 100px;
+  font-family: 'Karla', sans-serif;
+}
 
+.projects-title {
+  color: #51A3A3;
+  text-align: center;
+}
+
+.all-projects-boxes {
+
+}
+
+.projects-box {
+  top: 30px;
+  background-color: #51A3A3;
+  height: 450px;
+}
+
+.projects-description {
+  margin: 0px 50px;
+}
+
+.projects-description h3{
+  padding: 10px 5px;
+}
+
+.projects-description p{
+  padding: 10px 5px;
+}
+
+.projects-links {
+  text-align: center;
+}
+
+.projects-screenshots {
+
+}
+
+.projects-image{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+/*Contact Section */
+
+.contact-container {
+  background-color: #F2F4F3;
+  font-family: 'Karla', sans-serif;
+}
+
+.contact-innerWrap {
+  margin: 0 auto;
+  /*border: 1px solid black;*/
+  height: 300px;
+  width: 95%;
+}
+
+.contact-title {
+  height: 100%;
+}
+
+.contact-title h2 {
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+.contact-content {
+  height: 100%;
+}
+
+.contact-content-wrap {
+
+  margin-left: 10%;
+}
+
+.email, .linkedin, .github, .twitter{
+  width: 25%;
+  height: 25%;
+  float: left;
+  display: inline-block;
+  padding: 2.5% 2.5%;
+}
+
+.email {
+  background-color: #423E67;
+}
+
+.email img {
+  width: 100%;
+  height: 100%;
+}
+
+.linkedin {
+  background-color: #FA8072;
+}
+
+.linkedin img {
+  width: 100%;
+  height: 100%;
+}
+
+.github {
+  background-color: #423E67;
+}
+
+.github img {
+  width: 100%;
+  height: 100%;
+}
+
+.twitter {
+  background-color: #FA8072;
+}
+
+.twitter img {
+  width: 100%;
+  height: 100%;
 }
