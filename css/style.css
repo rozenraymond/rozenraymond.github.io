@@ -138,13 +138,13 @@ span.keyword {
 .back-end-title h2 {
   text-align: center;
   font-size: 1rem;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .others-list-title h2 {
   text-align: center;
   font-size: 1rem;
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .front-end-list {
@@ -184,8 +184,14 @@ span.keyword {
   margin-right: 10px;
 }
 
-.skill p {
-  font-size: 0.6rem;
+.skill:hover {
+  box-shadow: 3px 0px 30px 5px rgba(255,255,255,0.8);
+
+}
+
+.project-management {
+  font-size: 0.7rem;
+  padding-top: 40px;
 }
 
 /*.front-end, .back-end, .others{
@@ -285,16 +291,16 @@ span.keyword {
 }
 
 .projects-links a {
-  border: 1px solid #2F0147;
+  border: 1px solid #423E67;
   background-color: #FAF3DD;
-  color: #2F0147;
+  color: #423E67;
   text-decoration: none;
   padding: 5px 5px;
 }
 
 .projects-links a:hover {
   border: 1px solid #FAF3DD;
-  background-color: #2F0147;
+  background-color: #423E67;
   color: #FAF3DD;
 }
 
