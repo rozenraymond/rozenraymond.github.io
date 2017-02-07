@@ -6,7 +6,7 @@ html {
 .container {
   margin: 0 auto;
   width: 90%;
-  height: 5100px;
+  height: 5400px;
   overflow: auto;
 }
 
@@ -254,7 +254,7 @@ html {
 
   /* paragraph text */
   .skills {
-    height: 200vh;
+    height: 145vh;
   }
 
   .front-end-list, .back-end-list, .others-list {

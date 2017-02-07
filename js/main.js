@@ -24,4 +24,10 @@ $(document).ready(function() {
            $(this).toggleClass("infinite");
         });
 
+        $(".skill").hover(function() {
+            $(this).toggleClass("animated");
+            $(this).toggleClass("swing");
+            $(this).toggleClass("infinite");
+        });
+
 });
