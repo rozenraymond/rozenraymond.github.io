@@ -1,20 +1,20 @@
 html {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-.container {
+/*.container {
   margin: 0 auto;
   width: 90%;
   height: 5400px;
   overflow: auto;
-}
+}*/
 
 .col{
-  padding: 25px 0px;
-  min-height: 30px;
+  padding: 10px 0px;
+  min-height: 10px;
   float: left;
-  /*transition: width 0.3s ease-in-out;*/
+
 }
 
 /*text-align*/
@@ -128,7 +128,7 @@ html {
   }
 
   .lg-col-1 {
-    width: cacl(100%/12);
+    width: calc(100%/12);
   }
 
 
@@ -247,97 +247,6 @@ html {
 /* SMARTPHONE */
 @media(max-width: 720px) and (min-width: 320px){
 
-  /* intro text size */
-  .sm-intro {
-    font-size: 1.5rem;
-  }
-
-  /* paragraph text */
-  .skills {
-    height: 145vh;
-  }
-
-  .front-end-list, .back-end-list, .others-list {
-  }
-
-  .skills-list {
-    margin-top: 15px;
-    }
-
-  .sm-p {
-    line-height: 150%;
-    font-size: 0.8rem;
-  }
-
-  /*.projects-image img {
-    height: 200px;
-    width: 300px;
-  }*/
-
-  .skills-title {
-    padding: 5px  0px;
-  }
-
-  .skills {
-    height: 150vh;
-  }
-
-  .skills-list-container{
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .front-end-title, .back-end-title, .others-list-title {
-    padding-top: 0px;
-  }
-
-.front-end-skills, .back-end-skills {
-  padding-bottom: 0px;
-}
-  .front-end-list, .back-end-list, .other-skill-list {
-    float: none;
-    margin-left: calc((100%/12)*2);
-  }
-
-  .front-end-title  h2{
-    padding-top: 0px;
-  }
-
-  .back-end-title h2 {
-    padding: 0px 0px;
-  }
-
-  .other-skill-list{
-    padding-top: 0px;
-  }
-
-  .others-list-title h2 {
-    padding-top: 10px;
-  }
-
-  .skill {
-    font-size: 0.5rem;
-    padding-top: 20px;
-    height: 70px;
-    width: 70px;
-  }
-
-  .project-management {
-    font-size: 0.4rem;
-
-  }
-
-  .cv-text {
-    font-size: 0.7rem;
-  }
-
-  .contact-title {
-    height: 50%;
-}
-
-.contact-content-wrap {
-  margin-left: 10%;
-}
 
   .sm-card {
     font-size: 0.8rem;

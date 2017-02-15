@@ -1,0 +1,55 @@
+.project-details-inner{
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+  /*height:200px;*/
+  overflow: auto;
+}
+
+.previous-button, .next-button {
+  margin: 0 auto;
+  width: 15px;
+  height: 30px;
+  border: 1px solid black;
+  height: 500px;
+}
+
+#slider {
+  border: 1px solid pink;
+  position: relative;
+  overflow: auto;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+.slider-innerWrap {
+  position: relative;
+   padding: 0;
+   height: 600px;
+}
+
+.project-slider-list{
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 600px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+.previous-button a, .next-button a{
+  text-decoration: none;
+  line-height: 500px;
+}
+
+.project-one {
+  width: 800px;
+  height: 550px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid hotpink;
+}
