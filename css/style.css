@@ -83,6 +83,21 @@ header .nav-wrapper {
   line-height: 150%;
 }
 
+/*Skill */
+.skills-list li {
+  list-style-type: none;
+  display: inline-block;
+  border: 1px solid #6559ae;
+  color: #6559ae;
+  /*background-color: #6559ae;*/
+  margin: 2px;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 18px;
+  box-shadow: 1px 0px 2px 1px rgba(0,0,0,0.15);
+}
+
+
 /*--------------------------------------------------*/
 /* Projects page */
 .projects {
