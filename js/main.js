@@ -11,6 +11,40 @@ console.log('%c Cheers! ', 'background: 	#9370DB; color: black; display: block;'
 
 $(document).ready(function () {
 
+  // ----------------------------------------Canvas Plugin in Index.html--------------------------------------
+  if( $.fn.particleground ){
+    $("#homepage").particleground({
+      dotColor: '#ACAFD6',
+      lineColor: '#ACAFD6'
+    });
+  }
+
+  if( window.innerWidth < 721 ) {
+    $(".homepage-wrap").css({
+      'margin-top': -($('.homepage-wrap').height() / 2)
+    });
+  } else {
+    $(".homepage-wrap").css({
+      'margin-top': -($('.homepage-wrap').height() / 1.2)
+    });
+  }
+
+  window.onresize = function() {
+    // if less than 721px
+    if( window.innerWidth < 721 ) {
+      $(".homepage-wrap").css({
+        'margin-top': -($('.homepage-wrap').height() / 2)
+      });
+    } else {
+      $(".homepage-wrap").css({
+        'margin-top': -($('.homepage-wrap').height() / 1.2)
+      });
+    }
+  };
+
+
+
+// ---------------------------------------- Project Details Slider -------------------------------------------
   // Selecting the wrapper for the slide
   $wrapper = $("#wrapper");
   var slideCount = $wrapper.children().length;
