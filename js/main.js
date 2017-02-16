@@ -66,11 +66,11 @@ $(document).ready(function () {
       if (i === (slideCount-1)) {
         break;
       }
-      else if ($wrapper.children().eq( i ).hasClass( "active" ) ) {
+      else if ($wrapper.children().eq( i ).hasClass( "active" ) ){
         console.log(i);
         nextSlide(i);
         break;
-      }
+      };
 
     }
   };
@@ -79,14 +79,14 @@ $(document).ready(function () {
     // determine which div we are currently displaying
     for(var i= 0; i < slideCount; i++) {
 
-      if ($wrapper.children().eq( i ).hasClass( "active" ) ) {
-        if (i === (0)) {
-          break;
-        }
-        else {
+      if ($wrapper.children().eq( i ).hasClass( "active" ) ){
+        // if (i === (0)) {
+        //   break;
+        // }
+        // else {
           previousSlide(i);
           break;
-        }
+        // }
 
       }
 
@@ -125,6 +125,9 @@ $(document).ready(function () {
 
   $(".next").click(nextButton);
   $(".previous").click(previousButton);
+
+  // --------------------------------------------------------------------
+  // Contact Page - adding animated class to the contact boxes
 
   $(".email").hover(function () {
       $(this).toggleClass("animated");
