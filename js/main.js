@@ -15,13 +15,15 @@ $(document).ready(function () {
   if( $.fn.particleground ){
     $("#homepage").particleground({
       dotColor: '#ACAFD6',
-      lineColor: '#ACAFD6'
+      lineColor: '#ACAFD6',
+      density: "6000"
+
     });
   }
 
   if( window.innerWidth < 721 ) {
     $(".homepage-wrap").css({
-      'margin-top': -($('.homepage-wrap').height() / 2)
+      'margin-top': -($('.homepage-wrap').height() / 1.48)
     });
   } else {
     $(".homepage-wrap").css({
@@ -33,7 +35,7 @@ $(document).ready(function () {
     // if less than 721px
     if( window.innerWidth < 721 ) {
       $(".homepage-wrap").css({
-        'margin-top': -($('.homepage-wrap').height() / 2)
+        'margin-top': -($('.homepage-wrap').height() / 1.48)
       });
     } else {
       $(".homepage-wrap").css({

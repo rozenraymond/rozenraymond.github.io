@@ -285,6 +285,24 @@ header .nav-wrapper {
 /*--------------------------------------------------*/
 /* Project Detail page */
 
+.back-button {
+  margin-left: 5%;
+}
+
+.back-button a {
+  text-decoration: none;
+  border:1px solid #6559ae;
+  color: #6559ae;
+  padding: 3px 8px;
+  font-size: 0.7rem;
+  text-transform: uppercase
+}
+
+.back-button a:hover {
+  color: white;
+  background-color: #6559ae;
+}
+
 .project-details-container {
   width: 90%;
   margin: 0 auto;
