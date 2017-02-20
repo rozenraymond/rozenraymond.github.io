@@ -47,81 +47,113 @@ $(document).ready(function () {
 
 
 // ---------------------------------------- Project Details Slider -------------------------------------------
+
   // Selecting the wrapper for the slide
   $wrapper = $("#wrapper");
   var slideCount = $wrapper.children().length;
+  var slideWidth = $wrapper.children().width;
   var slideHeight = $(".content").height();
+  var totalHeight = slideCount * slideHeight;
 
 
-  // which slide number is currently active
-  var activeLink = 0;
+  $(".content-container").css({ width: slideWidth, height: slideHeight});
+  $wrapper.css({ width: slideWidth, height: totalHeight});
 
-  // set up active class to the first child div initially
-  $wrapper.children().eq( 0 ).addClass( "active" );
+  // $wrapper.children().eq(slideCount).prependTo("$wrapper");
 
-  // add event listener, when click next or previous will move to the next slide
   var nextButton = function () {
-    // determine which div we are currently displaying
-    for(var i=0; i < slideCount; i++) {
-      if (i === (slideCount-1)) {
-        break;
-      }
-      else if ($wrapper.children().eq( i ).hasClass( "active" ) ){
-        console.log(i);
-        nextSlide(i);
-        break;
-      };
-
-    }
+    var adjustedTop = parseInt( $wrapper.css( "top" ) ) - slideHeight;
+    $wrapper.animate({
+      top: adjustedTop
+    }, 200, function() {
+      var child = $wrapper.children().first();
+      child.appendTo($wrapper);
+      $wrapper.css('top', '');
+    });
   };
 
   var previousButton = function () {
-    // determine which div we are currently displaying
-    for(var i= 0; i < slideCount; i++) {
-
-      if ($wrapper.children().eq( i ).hasClass( "active" ) ){
-        // if (i === (0)) {
-        //   break;
-        // }
-        // else {
-          previousSlide(i);
-          break;
-        // }
-
-      }
-
-    }
+    var adjustedTop = parseInt( $wrapper.css( "top" ) ) + slideHeight;
+    $wrapper.animate({
+      top: adjustedTop
+    }, 200, function() {
+      var child = $wrapper.children().last();
+      child.prependTo($wrapper);
+      $wrapper.css('top', '');
+    });
   };
 
-  var nextSlide = function (i) {
-    console.log(i);
-    console.log(slideHeight);
-    var bottomHeight = ((i+1) * slideHeight * -1);
-
-    // set translate3d css to the bottom height of the current active div
-    var translateValue = "translate3d(0px," + bottomHeight + "px, 0px)";
-    $wrapper.css("transform", translateValue);
-
-    // remove active class in the previous div
-    $wrapper.children().eq( i ).removeClass( "active" );
-
-    // add the next slide with the class of active
-    $wrapper.children().eq( i+1 ).addClass( "active" );
-  };
-
-  var previousSlide = function (i) {
-    var upperHeight = ((i) * slideHeight * -1);
-    console.log(upperHeight);
-    // set translate3d css to the bottom height of the current active div
-    var translateValue = "translate3d(0px," + upperHeight + "px, 0px)";
-    $wrapper.css("transform", translateValue);
-
-    // remove active class in the previous div
-    $wrapper.children().eq( i ).removeClass( "active" );
-
-    // add the next slide with the class of active
-    $wrapper.children().eq( i-1 ).addClass( "active" );
-  };
+  // // which slide number is currently active
+  // var activeLink = 0;
+  //
+  // // set up active class to the first child div initially
+  // $wrapper.children().eq( 0 ).addClass( "active" );
+  //
+  //
+  //
+  // // add event listener, when click next or previous will move to the next slide
+  // var nextButton = function () {
+  //   // determine which div we are currently displaying
+  //   for(var i=0; i < slideCount; i++) {
+  //     if (i === (slideCount-1)) {
+  //       break;
+  //     }
+  //     else if ($wrapper.children().eq( i ).hasClass( "active" ) ){
+  //       console.log(i);
+  //       nextSlide(i);
+  //       break;
+  //     };
+  //
+  //   }
+  // };
+  //
+  // var previousButton = function () {
+  //   // determine which div we are currently displaying
+  //   for(var i= 0; i < slideCount; i++) {
+  //
+  //     if ($wrapper.children().eq( i ).hasClass( "active" ) ){
+  //       // if (i === (0)) {
+  //       //   break;
+  //       // }
+  //       // else {
+  //         previousSlide(i);
+  //         break;
+  //       // }
+  //
+  //     }
+  //
+  //   }
+  // };
+  //
+  // var nextSlide = function (i) {
+  //   console.log(i);
+  //   // console.log(slideHeight);
+  //   var bottomHeight = ((i+1) * slideHeight * -1);
+  //
+  //   // set translate3d css to the bottom height of the current active div
+  //   var translateValue = "translate3d(0px," + bottomHeight + "px, 0px)";
+  //   $wrapper.css("transform", translateValue);
+  //
+  //   // remove active class in the previous div
+  //   $wrapper.children().eq( i ).removeClass( "active" );
+  //
+  //   // add the next slide with the class of active
+  //   $wrapper.children().eq( i+1 ).addClass( "active" );
+  // };
+  //
+  // var previousSlide = function (i) {
+  //   var upperHeight = ((i) * slideHeight * - 1);
+  //   console.log(upperHeight);
+  //   // set translate3d css to the bottom height of the current active div
+  //   var translateValue = "translate3d(0px," + upperHeight + "px, 0px)";
+  //   $wrapper.css("transform", translateValue);
+  //
+  //   // remove active class in the previous div
+  //   $wrapper.children().eq( i ).removeClass( "active" );
+  //
+  //   // add the next slide with the class of active
+  //   $wrapper.children().eq( i-1 ).addClass( "active" );
+  // };
 
   $(".next").click(nextButton);
   $(".previous").click(previousButton);

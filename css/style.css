@@ -203,7 +203,8 @@ header .nav-wrapper {
 
 .project-list svg line {
   stroke-width: 3;
-  stroke: #42033D;
+  stroke: #663399;
+  /*stroke: #42033D;*/
   fill: none;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
@@ -290,6 +291,7 @@ header .nav-wrapper {
 }
 
 .back-button a {
+  font-family: 'Karla', sans-serif;
   text-decoration: none;
   border:1px solid #6559ae;
   color: #6559ae;
@@ -326,10 +328,34 @@ header .nav-wrapper {
   height: 500px;
 }
 
-#slider {
+/*#slider {
   position: relative;
-    overflow: hidden;
-    margin: 20px auto 0 auto;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+}*/
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#content-container {
+  /*border: 1px solid red;*/
+  position: relative;
+  overflow: hidden;
+
+}
+
+#wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  /*margin: 20px auto 0 auto;*/
+  /*border: 1px solid blue;*/
 }
 
 .slider-innerWrap {
@@ -399,17 +425,10 @@ header .nav-wrapper {
 }
 
 .previous:hover , .next:hover {
-  font-size:25px;
+  font-size:30px;
   color: #ED254E;
 }
 
-
-/*--------------------------------------------------------------------*/
-/* Project Details HTML */
-/*#wrapper {
-    width: 2200px;
-    transform: translate3d(0, 0, 0);
-}*/
 
 .project-details-container {
   font-family: 'Karla', sans-serif;
