@@ -29,14 +29,21 @@ body {
   position: relative;
 }
 
-.homepage-wrap {
+.wrapper {
+  height: 300px;
+  margin-top: 200px;
+  text-align: center;
+}
+
+
+/* .homepage-wrap {
   z-index: 2;
   position: absolute;
   left: 0;
   top: 50%;
   padding: 0 20px;
   width: 100%;
-  text-align: center;
+  text-align: center; */
 }
 
 header {
